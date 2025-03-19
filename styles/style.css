@@ -75,7 +75,7 @@ header{
     
 }
 .hero-container{
-    padding: 0 190px ;
+    padding: 60px 190px ;
 }
 .nav-ber{
     display: flex;
@@ -183,10 +183,13 @@ header{
 
 /* habit section style end */
 .extra-run{
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:#222222; 
     backdrop-filter: blur(1px) ;
     display: flex;
     justify-content:space-between ;
+    align-items:center;
+    padding: 20px 40px;
+    border-radius:18px ;
 }
 .run-des{
 width: 445px;
@@ -207,4 +210,234 @@ width: 445px;
     border-radius: 18px;
 
 }
+     /* Trainings and Exercise section style start  */
+ .training-exercise{
+ }
+     .training-des{
+        width: 670px;
+        margin-bottom: 50px;
+     }
+     .training-des h3, .team h3{
+        font-size:3rem ;
+    font-weight:800;
+     }
+     .training-images img{
+        
+            width: 100%;
+            height: 100%;
+     }
+     .row-1,
+.row-2{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+}
+    .row-1{
+        display: grid;
+    grid-template-columns: 0.7fr 1.40fr 0.9fr ;
     
+    }
+    .row-2{
+        display: grid;
+        grid-template-columns: 1.20fr 0.8fr  1fr ;
+    }
+    .row-1-1st img{
+
+    }
+    .row-1-1st,
+    .row-1-2nd,
+    .row-1-3rd,
+    .row-2-1st,
+    .row-2-2nd,
+    .row-2-3rd{
+        position: relative;
+    }
+    
+
+.row-1-1st::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 255, 209, 0.238);
+}
+    .row-1-1st-des{
+        position: absolute;
+        top:80%;
+        left:30%;
+        color:black;
+        font-size: 1rem;
+        font-weight: 600;
+        transform: translate(-50% , -50%);
+    }
+    .row-1-2nd-des{
+        position: absolute;
+        top:10%;
+        left:20%;
+        color:#ffffff;
+        font-size: 1rem;
+        font-weight: 600;
+        transform: translate(-50% , -50%);
+    }
+    .row-1-2nd::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:rgba(255, 0, 0, 0.412);
+    }
+    .row-1-3rd-des{
+        position: absolute;
+        top:70%;
+        left:10%;
+        color:#ffffff;
+        font-size: 1rem;
+        font-weight: 600;
+        /* transform: translate(-50% , -50%); */
+    }
+    .row-1-3rd::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.27);
+    }
+    .row-2-1st-des{
+        position: absolute;
+        top:10%;
+        left:55%;
+        color:#ffffff;
+        font-size: 1rem;
+        font-weight: 600;
+        /* transform: translate(-50% , -50%); */
+    }
+    .row-2-1st::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:rgba(0, 0, 0, 0.5);
+    }
+    .row-2-2nd-des{
+        position: absolute;
+        top:70%;
+        left:10%;
+        color:#ffffff;
+        font-size: 1rem;
+        font-weight: 600;
+
+        /* transform: translate(-50% , -50%); */ 
+    }
+    .row-2-2nd::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:rgba(66, 255, 0, 0.3);
+    }
+    .row-2-3rd-des{
+        position: absolute;
+        top:70%;
+        left:15%;
+        color:#ffffff;
+        font-size: 1rem;
+        font-weight: 600;
+        /* transform: translate(-50% , -50%); */ 
+    }
+    .row-2-3rd::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 71, 255, 0.3);
+    }
+
+         /* Trainings and Exercise section style end  */  
+    
+/* BMI calculator section style start */
+.bmi-info{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+padding: 50px 190px ;
+
+background-color: rgba(34, 34, 34, 1);
+margin: 50px 0;
+}
+.bmi-des{
+    width: 670px;
+    margin: 0 auto;
+}
+.bmi-des h3{
+    font-size:40px ;
+    font-weight:700 ;
+}
+.bmi-chart h4,
+.bmi-calculate h4{
+    width: 445px;
+    font-size:20px;
+    font-weight: 600;
+}
+.bmi-calculate{
+    width: 577px;
+    gap: 12px;
+}
+table{
+    width: 310px;
+    height:215px;
+    text-align: left;
+    border-collapse: collapse;
+
+}
+td, th{
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    padding-left: 16px;
+
+}
+.input, .option{
+    width:577px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.input input , .option input, .option select, .select{
+    width: 50% 50%;
+    padding:12px 40px 12px 20px ;
+    border-radius: 8px;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.6) ;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.option select{
+    width:218px;
+    margin-bottom:10px ;
+}
+.select{
+    width: 577px;
+    padding:12px 40px 12px 20px ;
+}
+.select
+
+
+
+
+
+
+/* BMI calculator section style end*/
+
+    /*team section start  */
+
+
+    /*team section end  */
